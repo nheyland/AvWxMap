@@ -155,7 +155,10 @@ class metarmap:
                 np[i] = (52, 107, 235)
             for i in range(len(airports)):
                 np[i] = wx(airports[i]).color
+            print('sleep15')
             time.sleep(900)
+            print('sleep15end')
+
             run()
         run()
         return
