@@ -133,7 +133,7 @@ class metarmap:
         }
         for i in range(0, num_leds, 1):
 
-            if i>230:
+            if i>130:
                 cont = input('Viewing ' + str(i-1))
             if i in colors['red']['leds']:
                 np[i] = (52, 107, 235)
