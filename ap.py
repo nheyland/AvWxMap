@@ -136,8 +136,7 @@ class metarmap:
         for i in range(346, 0, -1):
             np[i] = (52, 107, 235)
         for i in range(len(airports)):
-            print(wx(airports[i]).map_metar)
-            np[i] = wx(airports[i]).map_metar
+            np[i] = wx(airports[i]).color
         return
 
     def __repr__(self):
