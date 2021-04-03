@@ -128,10 +128,15 @@ class metarmap:
     def america(num_leds, np): 
         for i in range(0, num_leds, 1):
             if i >56 and i <124:
+                # top left
                 np[i] = (52, 107, 235)
             elif i>-1 and i<5: 
+                # top left
                 np[i] = (52, 107, 235)
+            elif i ==2:
+                np[i] = (255, 255,255 )
             else: 
+                # reds
                 np[i] = (255, 0, 0)
         time.sleep(10000)
     def __init__(self, airports):
