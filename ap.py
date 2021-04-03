@@ -137,8 +137,8 @@ class metarmap:
         for i in range(355, 0, -1):
             np[i] = (52, 235, 220)
             time.sleep(.0001)
-        for i in range(len(airports)):
-            np[i] = wx(airports[i]).map_temp
+        # for i in range(len(airports)):
+        #     np[i] = wx(airports[i]).map_temp
         return
 
     def __repr__(self):
