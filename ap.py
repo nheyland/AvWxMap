@@ -125,15 +125,12 @@ class info:
 
 
 class metarmap:
-    def letscheck(num_leds, np):
+    def america(num_leds, np): 
         import time
         for i in num_leds:
             cont = input('Next' + i)
             np[i] = (52, 107, 235)
 
-    def america(num_leds, np): 
-        self.letscheck(num_leds, np)
-        import time
         for i in range(0, num_leds, 1):
             if i >56 and i <124:
                 # top left
