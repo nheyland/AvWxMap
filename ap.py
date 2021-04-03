@@ -138,7 +138,7 @@ class metarmap:
             else: 
                 # reds
                 np[i] = (255, 0, 0)
-        time.sleep(10000)
+            time.sleep(1)
     def __init__(self, airports):
         import board
         import neopixel
