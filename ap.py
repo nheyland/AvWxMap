@@ -133,7 +133,8 @@ class metarmap:
             elif i>-1 and i<5: 
                 # top left
                 np[i] = (52, 107, 235)
-            elif i ==2:
+            elif i == 2:
+                print('white')
                 np[i] = (255, 255,255 )
             else: 
                 # reds
