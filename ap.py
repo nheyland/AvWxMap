@@ -132,10 +132,10 @@ class metarmap:
             if i >56 and i <124:
                 # top left
                 np[i] = (52, 107, 235)
-            elif i>-1 and i<5 or i==52: 
+            elif i>-1 and i<5 or i==52 or i==56: 
                 # top left
                 np[i] = (52, 107, 235)
-            elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=53:
+            elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=55 or i>=124 and i<=127 or i>=130 and i<132:
                 np[i] = (255, 255, 255)
             else: 
                 # reds
