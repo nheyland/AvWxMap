@@ -131,6 +131,11 @@ class metarmap:
         brightness = 0.1
         np = neopixel.NeoPixel(board.D18, len(airports), brightness=brightness,
                                auto_write=True, pixel_order=neopixel.GRB)
+        for j in range(255):
+            for i in range(346):
+                pixel_index = (i * 256 // 346) + j
+                np[i] = wheel(pixel_index & 255)
+            time.sleep(.1)
         for i in range(0, 346, 1):
             np[i] = (255, 0, 0)
         for i in range(346, 0, -1):
