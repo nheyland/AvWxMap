@@ -127,10 +127,11 @@ class info:
 class metarmap:
     def america(num_leds, np): 
         for i in range(0, num_leds, 1):
-            if i >50 and i <100:
+            if i >45 and i <100:
                 np[i] = (52, 107, 235)
             else: 
                 np[i] = (255, 0, 0)
+        time.sleep(10000)
     def __init__(self, airports):
         import board
         import neopixel
