@@ -128,14 +128,14 @@ class metarmap:
     def america(num_leds, np): 
         import time
         for i in range(0, num_leds, 1):
-            cont = input('Next' + str(i))
+            cont = input('Viewing' + str(i-1)+ ' press enter to see '+ str(i))
             if i >56 and i <124:
                 # top left
                 np[i] = (52, 107, 235)
             elif i>-1 and i<5: 
                 # top left
                 np[i] = (52, 107, 235)
-            elif i ==6 or i==7 or i== 9 or i== 56:
+            elif i == 6:
                 np[i] = (255, 255, 255)
             else: 
                 # reds
