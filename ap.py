@@ -133,10 +133,10 @@ class metarmap:
                                auto_write=True, pixel_order=neopixel.GRB)
         for i in range(0, 346, 1):
             np[i] = (235, 52, 214)
-            time.sleep(.000001)
+            # time.sleep(.000001)
         for i in range(346, 0, -1):
             np[i] = (52, 235, 220)
-            time.sleep(.000001)
+            # time.sleep(.000001)
         for i in range(len(airports)):
             np[i] = wx(airports[i]).map_temp
         return
