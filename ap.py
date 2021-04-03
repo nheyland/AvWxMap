@@ -129,7 +129,7 @@ class metarmap:
         import time
         for i in range(0, num_leds, 1):
             if i>180:
-                cont = input('Viewing' + str(i-1)+ ' press enter to see '+ str(i))
+                cont = input('Viewing ' + str(i-1))
             if i >56 and i <124:
                 # top left
                 np[i] = (52, 107, 235)
@@ -138,7 +138,7 @@ class metarmap:
                 np[i] = (52, 107, 235)
             elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=55 or i>=124 and i<=127 or i>=130 and i<=132 or i>=136 and i<=137 or i>=139 and i<=142 or i>=146 and i<=149:
                 np[i] = (255, 255, 255)
-            elif i>=155 and i<=158 or i>=161 and i<=163 or i>=166 and i<=168 or i==172 or i>=175 and i<=181:
+            elif i>=155 and i<=158 or i>=161 and i<=163 or i>=166 and i<=168 or i==172 or i>=175 and i<=181 or i == 185 or i== 185 or i>=197 and i<=200 or i>=208 and i<=213 or i>=216 and i<=224 or i>=233 and i<=234 or i>=239 and i<=246:
                 np[i] = (255, 255, 255)
             else: 
                 # reds
@@ -163,5 +163,60 @@ class metarmap:
 
     def __repr__(self):
         return str('Unsurpported')
+
+
+# x= "
+# 184 
+# 185
+
+# 197
+# 198
+# 199
+# 200
+
+# 208
+# 209
+# 210
+# 211
+# 212
+# 213
+
+# 216
+# 217
+# 218
+# 219
+# 220
+# 221
+# 222
+# 223 
+# 224
+
+# 233
+# 234
+
+# 239
+# 240
+# 241
+# 242
+# 243
+# 244
+# 245
+# 246"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
