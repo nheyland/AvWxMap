@@ -129,7 +129,7 @@ class metarmap:
         for i in range(0, num_leds, 1):
             if i >56 and i <124:
                 np[i] = (52, 107, 235)
-            elif i>0 and i<5: 
+            elif i>-1 and i<5: 
                 np[i] = (52, 107, 235)
             else: 
                 np[i] = (255, 0, 0)
