@@ -127,7 +127,11 @@ class info:
 class metarmap:
     def america(num_leds, np): 
         import time
-        x = []
+        colors ={
+            "white":{ "leds": [5, 6, 7, 10, 11, 12, 18, 19, 23, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 49, 50, 51, 53, 54, 55, 124, 125, 126, 127, 130, 131, 132, 136, 137, 139, 140, 141, 142, 146, 147, 148, 149, 155, 156, 157, 158, 161, 162, 163, 166, 167, 168, 172, 175, 176, 177, 178, 179, 180, 181, 185, 197, 198, 199, 200, 208, 209, 210, 211, 212, 213, 216, 217, 218, 219, 220, 221, 222, 223, 224, 233, 234, 239, 240, 241, 242, 243, 244, 245, 246]},
+
+
+        }
         for i in range(0, num_leds, 1):
 
             if i>254:
@@ -136,12 +140,15 @@ class metarmap:
             if i >56 and i <124 or i>-1 and i<5 or i==52 or i==56:
                 # top left
                 np[i] = (52, 107, 235)
-            elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=55 or i>=124 and i<=127 or i>=130 and i<=132 or i>=136 and i<=137 or i>=139 and i<=142 or i>=146 and i<=149:
+            elif i in colors['white']['leds']:
                 np[i] = (255, 255, 255)
-                x.append(i)
-            elif i>=155 and i<=158 or i>=161 and i<=163 or i>=166 and i<=168 or i==172 or i>=175 and i<=181 or i == 185 or i== 185 or i>=197 and i<=200 or i>=208 and i<=213 or i>=216 and i<=224 or i>=233 and i<=234 or i>=239 and i<=246:
-                np[i] = (255, 255, 255)
-                x.append(i)
+
+            # elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=55 or i>=124 and i<=127 or i>=130 and i<=132 or i>=136 and i<=137 or i>=139 and i<=142 or i>=146 and i<=149:
+            #     np[i] = (255, 255, 255)
+            #     x.append(i)
+            # elif i>=155 and i<=158 or i>=161 and i<=163 or i>=166 and i<=168 or i==172 or i>=175 and i<=181 or i == 185 or i== 185 or i>=197 and i<=200 or i>=208 and i<=213 or i>=216 and i<=224 or i>=233 and i<=234 or i>=239 and i<=246:
+            #     np[i] = (255, 255, 255)
+            #     x.append(i)
             else: 
                 # reds
                 np[i] = (255, 0, 0)
