@@ -127,7 +127,7 @@ class info:
 class metarmap:
     def america(num_leds, np): 
         for i in range(0, num_leds, 1):
-            if i >53 and i <124:
+            if i >54 and i <124:
                 np[i] = (52, 107, 235)
             elif i>0 and i<4: 
                 np[i] = (52, 107, 235)
