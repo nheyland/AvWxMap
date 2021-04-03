@@ -148,7 +148,7 @@ class metarmap:
                 r = 0
                 g = int(pos * 3)
                 b = int(255 - pos * 3)
-            return (r, g, b) if ORDER in (neopixel.RGB, neopixel.GRB) else (r, g, b, 0)
+            return (r, g, b)
 
         for j in range(255):
             for i in range(346):
