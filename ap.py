@@ -125,19 +125,21 @@ class info:
 
 
 class metarmap:
-    def america(): 
-        print('test')
+    def america(num_leds, np): 
+        for i in range(0, num_leds, 1):
+            np[i] = (52, 107, 235)
     def __init__(self, airports):
         import board
         import neopixel
         import time
+        num_leds= 346
         brightness = 0.1
         np = neopixel.NeoPixel(board.D18, len(airports), brightness=brightness,
                                auto_write=True, pixel_order=neopixel.GRB)
-        metarmap.america()
-        for i in range(0, 346, 1):
+        metarmap.america(num_leds, np)
+        for i in range(0, num_leds, 1):
             np[i] = (255, 0, 0)
-        for i in range(346, 0, -1):
+        for i in range(num_leds, 0, -1):
             np[i] = (52, 107, 235)
         for i in range(len(airports)):
             np[i] = wx(airports[i]).color
