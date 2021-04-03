@@ -128,17 +128,17 @@ class metarmap:
         import board
         import neopixel
         import time
-        brightness = 0.2
+        brightness = 0.15
         np = neopixel.NeoPixel(board.D18, len(airports), brightness=brightness,
                                auto_write=True, pixel_order=neopixel.GRB)
-        for i in range(0, 350, 1):
+        for i in range(0, len(airports), 1):
             np[i] = (235, 52, 214)
             time.sleep(.0001)
-        for i in range(355, 0, -1):
+        for i in range(len(airports), 0, -1):
             np[i] = (52, 235, 220)
             time.sleep(.0001)
-        # for i in range(len(airports)):
-        #     np[i] = wx(airports[i]).map_temp
+        for i in range(len(airports)):
+            np[i] = wx(airports[i]).map_temp
         return
 
     def __repr__(self):
