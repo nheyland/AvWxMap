@@ -132,23 +132,17 @@ class metarmap:
 
 
         }
+        x=[]
+        
         for i in range(0, num_leds, 1):
 
             if i>254:
-                print(x)
                 cont = input('Viewing ' + str(i-1))
             if i >56 and i <124 or i>-1 and i<5 or i==52 or i==56:
                 # top left
                 np[i] = (52, 107, 235)
             elif i in colors['white']['leds']:
                 np[i] = (255, 255, 255)
-
-            # elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=55 or i>=124 and i<=127 or i>=130 and i<=132 or i>=136 and i<=137 or i>=139 and i<=142 or i>=146 and i<=149:
-            #     np[i] = (255, 255, 255)
-            #     x.append(i)
-            # elif i>=155 and i<=158 or i>=161 and i<=163 or i>=166 and i<=168 or i==172 or i>=175 and i<=181 or i == 185 or i== 185 or i>=197 and i<=200 or i>=208 and i<=213 or i>=216 and i<=224 or i>=233 and i<=234 or i>=239 and i<=246:
-            #     np[i] = (255, 255, 255)
-            #     x.append(i)
             else: 
                 # reds
                 np[i] = (255, 0, 0)
