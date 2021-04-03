@@ -132,15 +132,14 @@ class metarmap:
             if i >56 and i <124:
                 # top left
                 np[i] = (52, 107, 235)
-            elif i>-1 and i<5: 
+            elif i>-1 and i<5 or i==52: 
                 # top left
                 np[i] = (52, 107, 235)
-            elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45:
+            elif i >= 5 and i <= 7 or i>=10 and i <=12 or i==18 or i==19 or i==23 or i>=34 and i<=45 or i>=49 and i<=53:
                 np[i] = (255, 255, 255)
             else: 
                 # reds
                 np[i] = (255, 0, 0)
-            time.sleep(.001)
         timews.sleep(1)
     def __init__(self, airports):
         import board
