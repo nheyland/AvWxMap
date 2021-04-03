@@ -129,9 +129,6 @@ class metarmap:
         import time
         for i in range(0, num_leds, 1):
             cont = input('Next' + str(i))
-            np[i] = (52, 107, 235)
-
-        for i in range(0, num_leds, 1):
             if i >56 and i <124:
                 # top left
                 np[i] = (52, 107, 235)
