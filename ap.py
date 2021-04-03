@@ -128,7 +128,7 @@ class metarmap:
     def america(num_leds, np): 
         import time
         for i in range(0, num_leds, 1):
-            if i>180:
+            if i>246:
                 cont = input('Viewing ' + str(i-1))
             if i >56 and i <124:
                 # top left
@@ -163,60 +163,4 @@ class metarmap:
 
     def __repr__(self):
         return str('Unsurpported')
-
-
-# x= "
-# 184 
-# 185
-
-# 197
-# 198
-# 199
-# 200
-
-# 208
-# 209
-# 210
-# 211
-# 212
-# 213
-
-# 216
-# 217
-# 218
-# 219
-# 220
-# 221
-# 222
-# 223 
-# 224
-
-# 233
-# 234
-
-# 239
-# 240
-# 241
-# 242
-# 243
-# 244
-# 245
-# 246"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
