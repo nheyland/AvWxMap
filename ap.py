@@ -127,7 +127,7 @@ class info:
 class metarmap:
     def america(num_leds, np): 
         import time
-        for i in num_leds:
+        for i in range(0, num_leds, 1):
             cont = input('Next' + i)
             np[i] = (52, 107, 235)
 
