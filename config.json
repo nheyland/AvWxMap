@@ -5,5 +5,5 @@
   "loading": true,
   "metars": true,
   "metarsIntervalTimeMins": 15,
-  "americaIntervalTimeMins": 2
+  "americaIntervalTimeMins": 60
 }
