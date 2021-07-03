@@ -161,10 +161,14 @@ class metarmap:
                                auto_write=True, pixel_order=neopixel.GRB)
 
         def run():
-            metarmap.america(num_leds, np)
-            metarmap.loading(num_leds, np)
-            metarmap.metars(airports, np)
-            time.sleep(900)
+            if schema["america"]:
+                metarmap.america(num_leds, np)
+                time.sleep(schema["americaIntervalTimeMins"]*60)
+            if schema["loading"]:
+                metarmap.loading(num_leds, np)
+            if schema["metars"]:
+                metarmap.metars(airports, np)
+                time.sleep(schema["metarsIntervalTimeMins"]*60)
             run()
         run()
         return
