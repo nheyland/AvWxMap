@@ -156,7 +156,7 @@ class metarmap:
         schema = r.get(
             "https://raw.githubusercontent.com/nheyland/AvWxMap/master/config.json?flush_cache=True").json()
         num_leds = 346
-        brightness = schema.brightness
+        brightness = schema['brightness']
         np = neopixel.NeoPixel(board.D18, len(airports), brightness=brightness,
                                auto_write=True, pixel_order=neopixel.GRB)
 
