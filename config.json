@@ -1,4 +1,5 @@
 {
-  "on": false,
-  "test": false
+  "on": true,
+  "brightness": 0.1
+  
 }
