@@ -153,22 +153,19 @@ class metarmap:
         import board
         import neopixel
         import time
+        schema = {}
         schema = r.get(
-            "https://raw.githubusercontent.com/nheyland/AvWxMap/master/config.json?flush_cache=True").json()
+            "https://murmuring-lowlands-01227.herokuapp.com/get").json()
         num_leds = 346
         brightness = schema['brightness']
         np = neopixel.NeoPixel(board.D18, len(airports), brightness=brightness,
                                auto_write=True, pixel_order=neopixel.GRB)
 
         def run():
-            if schema["america"]:
-                metarmap.america(num_leds, np)
-                time.sleep(schema["americaIntervalTimeMins"]*60)
-            if schema["loading"]:
-                metarmap.loading(num_leds, np)
-            if schema["metars"]:
-                metarmap.metars(airports, np)
-                time.sleep(schema["metarsIntervalTimeMins"]*60)
+            metarmap.america(num_leds, np)
+            time.sleep(schema["america"]*60)
+            metarmap.metars(airports, np)
+            time.sleep(schema["metarsIntervalTimeMins"]*60)
             run()
         run()
         return
