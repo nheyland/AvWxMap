@@ -165,7 +165,7 @@ class metarmap:
             metarmap.america(num_leds, np)
             time.sleep(schema["america"]*60)
             metarmap.metars(airports, np)
-            time.sleep(schema["metarsIntervalTimeMins"]*60)
+            time.sleep(schema["metar"]*60)
             run()
         run()
         return
