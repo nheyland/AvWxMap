@@ -134,8 +134,8 @@ class metarmap:
                          "CYXZ", "KCIU", "KAPN", "KMBS", "KCAD", "KTVC", "KMKG", "KFNT", "KMTC", "KTOL", "KSBN", "KMKE", "KRFD", "KARR", "KGYY", "KFWA", "KMNN", "KCMH", "KDAY", "KMIE", "KLAF", "KCMI", "KIND", "KCVG", "KHTS", "KLEX", "KSDF", "KAJG", "KBMG", "KHUF", "KDEC", "KPIA", "KUIN", "KIJX", "KSTL", "KMDH", "KCKV", "KMKL", "KMEM", "KJBR", "KJEF", "KMCI", "KTOP", "KTUL", "KSGF", "KLIT", "KFSM", "KSWO", "KOKC", "KELK", "KBGD", "KAMA", "KLBB", "KODO", "KFST", "KSJT", "KABI", "KDTO", "KDFW", "KCNW", "KERV", "KSAT", "KLRD", "MMMV", "MMIO", "KHRL", "KCRP", "KVCT", "KHYI", "KAUS", "KSGR", "KLBX", "KBPT", "KLFT", "KAEX", "KSHV", "KPRX", "KSPS", "KADM", "KADF", "KGLH", "KJAN", "KBTR", "KMSY", "KGPT", "KMOB", "KMEI", "KCEW", "KECP", "KTLH", "KAAF", "KTPA", "KCTY", "KVLD", "KMCN", "KAND", "KTYS", "KATL", "KCSG", "KBHM", "KCBM", "KHSV", "KCHA", "KBNA", "KMTH", "KMIA", "KPBI", "KMLB", "KDAB", "KJAX", "KSAV", "KCHS", "KCAE", "KMYR", "KILM", "KFAY", "KCLT", "KGSO", "KRDU", "KNCA", "KMQI", "KNTU", "KRIC", "KLYH", "KMRB", "KBWI", "KDCA", "KCKB", "KPIT", "KYNG", "KERI", "KUNV", "KIPT", "KALB", "KSFM", "KPSM", "KBOS", "KPVC", "KGON", "KISP", "KCEF", "KABE", "KMDT", "KSBY", "KACY", "KPHL", "KLGA", "KPOU", "KSYR", "KROC", "KART", "KRUT", "KMHT", "KEWB", "KPWM", "KBTV", "KHIE", "KBML", "KBHB", "KBGR", "3B1", "KBST", "KRKD", "KMLT", "KPQI", "KEPM", "CYQI", "CYZX", "CYHZ", "CYSJ", "CYFC", "CYQM", "CZBF", "CYGP"]
         self.num_leds = 346
         self.brightness = 0.1
-        np = neopixel.NeoPixel(board.D18, len(self.airports), brightness=self.brightness,
-                               auto_write=True, pixel_order=neopixel.GRB)
+        self.np = neopixel.NeoPixel(board.D18, len(self.airports), brightness=self.brightness,
+                                    auto_write=True, pixel_order=neopixel.GRB)
 
     def test(self):
         print(self.airports)
