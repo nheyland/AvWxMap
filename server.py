@@ -9,9 +9,9 @@ def america():
     return "<p>success<P>"
 
 
-@app.route("/metar")
+@app.route("/metars")
 def metar():
-    metarmap().metar()
+    metarmap().metars()
     return "<p>success<P>"
 
 
