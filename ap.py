@@ -166,6 +166,12 @@ class metarmap:
     def red(self):
         self.np.fill((255, 0, 0))
 
+    def blue(self):
+        self.np.fill((0, 0, 255))
+
+    def green(self):
+        self.np.fill((0, 255, 0))
+
     def loading(self):
 
         for i in range(0, self.num_leds, 1):

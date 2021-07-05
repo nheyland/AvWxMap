@@ -27,6 +27,18 @@ def red():
     return "<p>success<P>"
 
 
+@app.route("/blue")
+def blue():
+    metarmap().blue()
+    return "<p>success<P>"
+
+
+@app.route("/green")
+def green():
+    metarmap().green()
+    return "<p>success<P>"
+
+
 def run():
     app.run(host="0.0.0.0", port=3333)
 
