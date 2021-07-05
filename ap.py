@@ -164,7 +164,7 @@ class metarmap:
             self.np[i] = wx(self.airports[i]).color
 
     def red(self):
-        self.np.fill(255, 0, 0)
+        self.np.fill((255, 0, 0))
 
     def loading(self):
 
