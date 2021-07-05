@@ -22,7 +22,7 @@ def test():
 
 
 @app.route("/red")
-def test():
+def red():
     metarmap().red()
     return "<p>success<P>"
 
