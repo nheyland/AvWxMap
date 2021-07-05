@@ -159,7 +159,7 @@ class metarmap:
                 self.np[i] = (255, 0, 0)
 
     def metars(self):
-        print("################### RUNNING AMERICA ###################")
+        print("################### RUNNING METARS ###################")
         for i in range(len(self.airports)):
             self.np[i] = wx(self.airports[i]).color
 
