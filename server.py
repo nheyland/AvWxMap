@@ -21,6 +21,12 @@ def test():
     return "<p>success<P>"
 
 
+@app.route("/red")
+def test():
+    metarmap().red()
+    return "<p>success<P>"
+
+
 def run():
     app.run(host="0.0.0.0", port=3333)
 
