@@ -22,7 +22,6 @@ def test():
 
 
 def run():
-    print(request.remote_addr)
     app.run(host="0.0.0.0", port=3333)
 
 
