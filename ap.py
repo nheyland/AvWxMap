@@ -173,7 +173,7 @@ class metarmap:
         self.np.fill((0, 255, 0))
 
     def clear(self):
-        self.np.fill()
+        self.np.fill((0, 0, 0))
 
     def loading(self):
 
