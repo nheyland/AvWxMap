@@ -6,7 +6,7 @@ CORS(app)
 
 
 @app.route("/america")
-@cross_origin()
+@cross_origin(origin='*')
 def america():
     metarmap().america()
     return "<p>success<P>"
