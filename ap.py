@@ -172,6 +172,9 @@ class metarmap:
     def green(self):
         self.np.fill((0, 255, 0))
 
+    def clear(self):
+        self.np.clear()
+
     def loading(self):
 
         for i in range(0, self.num_leds, 1):

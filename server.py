@@ -1,12 +1,11 @@
 from ap import *
 from flask import jsonify, Flask, request
-from flask_cors import CORS, cross_origin
+from flask_cors import cross_origin
 app = Flask(__name__)
-CORS(app)
 
 
 @app.route("/america")
-@cross_origin(origin='*')
+@cross_origin()
 def america():
     metarmap().america()
     return "<p>success<P>"
@@ -44,6 +43,13 @@ def blue():
 @cross_origin()
 def green():
     metarmap().green()
+    return "<p>success<P>"
+
+
+@app.route("/off")
+@cross_origin()
+def off():
+    metarmap().clear()
     return "<p>success<P>"
 
 
