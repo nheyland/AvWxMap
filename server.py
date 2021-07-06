@@ -2,7 +2,7 @@ from ap import *
 from flask import jsonify, Flask, request
 from flask_cors import CORS, cross_origin
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 
 @app.route("/america")
