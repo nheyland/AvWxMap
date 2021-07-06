@@ -1,3 +1,4 @@
+from smarthome import Plug
 from ap import *
 from flask import jsonify, Flask, request
 from flask_cors import cross_origin
@@ -50,6 +51,13 @@ def green():
 @cross_origin()
 def off():
     metarmap().clear()
+    return "<p>success<P>"
+
+
+@app.route("/plug/printer")
+@cross_origin()
+def plugPrinter():
+    Plug.toggle()
     return "<p>success<P>"
 
 
