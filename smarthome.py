@@ -15,10 +15,11 @@ def Printer():
     # I dont care if you take this you would have to be on my local network to hit that so go for it
     # but also if you take it then turn my lights into a rainbow or something then Ill venmo you 5$
     url = "192.168.0.22"
-    data = r.get("http://192.168.0.22/api/server", headers={
-        "X-Api-Key":   api
-    })
-    print(data.text)
+    if r.get("http://192.168.0.22/api/server") == 200:
+        data = r.get("http://192.168.0.22/api/server", headers={
+            "X-Api-Key":   api
+        })
+        print(data.text)
 
 
 Printer()
